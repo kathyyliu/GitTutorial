@@ -20,24 +20,42 @@ This tutorial will use a [repo for a parser project](https://github.com/kathyyli
 ## 2. Clone
   
 In general, cloning in git is used to make a copy of an existing repository, but is most commonly used make a local copy of a remote repo.
-To start, go to the folder you want the repo to be in and use command `git clone <repo url>`.
+To start, go to the folder you want the repo to be in using terminal and use command `git clone <repo url>`.
 The result should look something like: 
-![clone terminal](images/clone.png)
+  
+<div align="center">
+  <img src="images/clone.png" width="500" />
+</div>
 
 Now, we can see that a new copy of the repo is on our machine!
+
 
 ## 3. Stage & Commit
 After we work on our new local repo for a bit, we might want to use git to save the current state of our files into a commit. 
 Git tracks changes to a file as insertions and deletions from the previous commit.
 For example, in the refactoring of the method below, git tracks that line 161 was added to/inserted, and lines 167-8 were deleted from the previous commit.
-![pycharm compare](images/compare.png)
+  
+![pycharm compare](images/changes.png)
+   
+Before making a commit we must stage the all the files we want the commit to include. 
+Thus, staging allows us to pick and chose exactly which modified files we want to commit to make cleaner commits and project history.
+The command to stage files is  `git add <file1 file2 ...>`.
+  
+We can also use `git status` to check which files are already staged or available to stage. 
+Once we are satisfied with the staged files, create a commit with all of the staged files with `git commit -m "<message>"`.
+All commits must be accompanied with a message (typically <50 characters long and starting with a capitalized verb in the imperative) that provides useful information about what has changed and why.
+  
+![add commit terminal](images/commit.png)
   
 
-
-
-
 ## 4. Stash
+But what if we want to save our changes without making a commit?
+With `git stash`, git will "stash" our uncommited changes to tracked files and revert the file to the last commit. 
+Now, we are free to make more changes or perform other git commands.
+Whenever we want to reapply our stashed changes, we can use `git stash apply`, which will restore the stashed changes on our files.
+
 
 ## 5. Push & Pull
+
 
 ## 6. Merge
