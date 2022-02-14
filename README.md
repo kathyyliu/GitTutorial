@@ -67,7 +67,7 @@ When checked out to another branch, files will be converted the state in the las
 Therefore, all further commits will be building off of the branch we are checked out on, and any changes must be stashed or commited before checking out to another branch (that contains its own commits).
   
 <div align="center">
-  <img src="images/branch.png" width="500" />
+  <img src="images/branch.png" width="350" />
 </div>
   
 
@@ -83,10 +83,10 @@ The other is a **merge conflict**, where the contents of one or more files are c
 If a merge conflict occurs, the merge will fail until we resolve the conflict. 
 
 <div align="center">
-  <img src="images/conflict-terminal.png" style="float: left;" width="400" />
-  <img src="images/conflict-code.png" style="float: left;" width="400" />
+  <img src="images/conflict-terminal.png" style="float: left;" width="500" />
+  <img src="images/conflict-code.png" style="float: left;" height="100"/>
 </div>
-
+  
 The most straightforward way to resolve the conflict would be to edit the indicates parts of each file until there are no more conflicts.
 However, many IDEs offer easier ways to deal with merge conflicts in a GUI.
 
